@@ -1,4 +1,4 @@
-// File: ee288_funcs.c - ee288 program utility functions
+// File: emi_funcs.c - emi program utility functions
 
 #include <stdio.h>
 #include "emi.h"
@@ -37,6 +37,6 @@ void execute_main(const char *filename) {
     printf("CONTINUOUS SCORE(30%%) = %6.2f.\nACTUAL END OF SEM(70%%) = %6.2f. ", continuous_score, actual_end_of_sem);
     printf("ACTUAL TOTAL(100%%) = %6.2f.\n", compute_actual_total(continuous_score, actual_end_of_sem));
     printf("END OF SEM(50%% + 20%%) = %6.2f. TOTAL(100%%) = %6.2f.\n", end_of_sem, compute_total(continuous_score, end_of_sem));
-    write_variables_to_file(filename, index_number, continuous_score, actual_end_of_sem, end_of_sem);
+    write_results_to_file(filename, index_number, continuous_score, actual_end_of_sem, end_of_sem);
     fclose(file);
 }
