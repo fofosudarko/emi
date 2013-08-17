@@ -1,4 +1,4 @@
-// File: ee288.h - Header file
+// File: emi.h - Header file
 
 typedef char* string;
 
@@ -16,7 +16,7 @@ void write_filename(const string);
     void execute_main(const char*);
 #endif
 
-void write_variables_to_file(const char*,int,float,float,float);
+void write_results_to_file(const char*,int,float,float,float);
 
 #ifdef END_H
     void write_end_to_file(const char*,int);

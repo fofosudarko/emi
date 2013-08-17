@@ -1,4 +1,4 @@
-// File: ee288_files.c - ee288 program file functions
+// File: emi_files.c - emi program file functions
 
 #include <stdio.h>
 #include "emi.h"
@@ -12,8 +12,8 @@ void f_underline(const char *filename, char line, const int strlen) {
     fclose(file);
 }
 
-/* write_variables_to_file: write results to file */
-void write_variables_to_file(const char *filename, int index_number, float continuous_score, float actual_end_of_sem, float end_of_sem) {
+/* write_results_to_file: write results to file */
+void write_results_to_file(const char *filename, int index_number, float continuous_score, float actual_end_of_sem, float end_of_sem) {
     FILE *file;
     file = fopen(filename, "a+");
     fprintf(file, "|    %7d   |   %6.2f   |      %6.2f       |    %6.2f    |     %6.2f       |    %6.2f   |\n",
